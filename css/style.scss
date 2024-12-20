@@ -1,0 +1,272 @@
+@import "modules/color";
+@import "modules/general";
+@import "modules/grid";
+@import "modules/typo";
+@import "modules/spacer";
+@import "modules/image";
+@import "modules/button";
+@import "modules/shadow";
+@import "modules/border";
+@import "modules/color";
+
+// // header
+// header {
+    
+//     position: fixed;
+//     width: 350px;
+//     height: 150vh;
+//     background-color: antiquewhite;
+
+//     .navbar {
+//         a {
+//             color: white;
+//             padding: 10px 20px;
+
+//             &:hover {
+//                 background: white;
+//                 color: black;
+//             }
+//         }
+
+//         .button {
+//             border: 1px solid white;
+
+//             &:hover {
+//                 background: white;
+//                 color: black;
+//             }
+//         }
+//     }
+// }
+
+
+*{
+  font-size: 22%;
+}
+.float {
+    animation: floating 2s linear infinite;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-1.5rem);
+    }
+}
+
+#burger {
+    display: flex;
+}
+
+// service
+.card {
+    padding: 43px 43px 43px 43px;
+    background: $halfwhite;
+    border-radius: 25px;
+    display: flex;
+
+    i {
+        text-align: center;
+        height: 7rem;
+        width: 7rem;
+        line-height: 7rem;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    &:hover {
+        background: white;
+        transform: scale(1.1);
+    }
+}
+
+// contact
+.hire {
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    transition: .5s;
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+.share {
+    a {
+        color: white;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        background: $halfwhite;
+        border-radius: 50%;
+        margin-right: .5rem;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+// @media screen and(max-width:1024px) {}
+
+// @media screen and(max-width:768px) {
+
+    // header
+    #burger {
+        display: block;
+    }
+
+
+
+$secondary-color: #ffffff;
+$font-color: #26030375;
+$border-radius: 8px;
+
+
+.sidebar {
+    background-color:$font-color ;
+    color: $secondary-color;
+    width: 280px;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+
+    .profile {
+        text-align: center;
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid $secondary-color;
+            margin-bottom: 15px;
+        }
+    }
+
+    h3 {
+        text-transform: uppercase;
+        margin: 20px 0 10px;
+        font-size: 1rem;
+        border-bottom: 2px solid $secondary-color;
+        padding-bottom: 5px;
+        width: 100%;
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+
+        li {
+            margin: 8px 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            line-height: 1.5;
+        }
+    }
+}
+
+  .contact-info {
+    margin-bottom: 2cm;
+    h2 {
+      color: white;
+;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: white;
+      font-size: 15px;
+    }
+  }
+
+  .contact-form {
+    h2 {
+      color: white;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 700px;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+  }
+// }
+
+.terms {
+  margin: 10px 0;
+
+  a {
+    color:white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+button {
+  background-color: white;
+  color:#260303;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+  }
+}
+@mixin respond($breakpoint) {
+  @if $breakpoint == md {
+    @media screen and (max-width: 1024px) { @content; }
+  }
+  @else if $breakpoint == s {
+    @media screen and (max-width: 768px) { @content; }
+  }
+  @else if $breakpoint == xs {
+    @media screen and (max-width: 414px) { @content; }
+  }
+}
+
+.spacetop {
+  &-5 { margin-top: 5rem; }
+  @include respond(s) { margin-top: 3rem; }
+}
+.navbar {
+  display: none;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
