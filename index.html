@@ -12,6 +12,9 @@
 
 <body>
     <div class="resume-container">
+        <div class="mobile-menu">
+            <i class="fa fa-bars"></i>
+        </div>
         <aside class="sidebar">
             <div class="profile">
                 <img src="img/SARY.jpg" alt="sandy">
@@ -44,33 +47,27 @@
 
                     <li>French ● ● ● ○ ○ ○ ○ ○ ○ ○</li>
                 </ul>
-         <div id="burger" class="fas fa-bars size3 white"></div>
-                <nav class="navbar size2">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact" class="button">Hire me</a>
-                </nav>
-            </div>
             </div>
         </aside>
 
-    <!-- header section starts -->
-    <!-- <header class="header  bg-halfblack"> -->
-        <div class="container ">
-            <div class="row jc-between ai-center">
-                <div class="flex ai-center logo">
-                    <img src="" alt="" class="width4">
-                    <a href="#home" class="size2 white paddingleft1"></a>
-                </div>
-                
-        </div> 
-    <!-- </header> -->
-    <!-- header section ends -->
-<!-- 
+        <!-- Section navbar -->
+
+        <!-- <header class="header">
+            <div class="logo">
+                <a href="index.html"> <span style="font-size: 2rem;">Sandra</span></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="mobile-menu"></div>
+        </header> -->
+            
+<main style="">
     <!-- home section starts -->
     <section class="home spacetop15" id="home">
-        <div class="row container flexcol ai-center ta-center-s">
+        <div class="row flexcol ai-center ta-center-s">
             <h1 class="size7 font2 bold">
                 I’m Fitahiana Sandra.
             </h1>
@@ -86,7 +83,7 @@
 
     <!-- media section starts -->
      <section class="spacer5 bg-halfblack">
-        <div class="container row jc-between jc-center-s  ">
+        <div class=" row jc-between jc-center-s  ">
             <img src="img/dribbble.svg" alt="" class="img-responsive-xs padding1">
             <img src="img/linkedin.svg " alt="" class="img-responsive-xs padding1">
             <!-- <img src="img/medium.svg" alt="" class="img-responsive-xs padding1"> -->
@@ -98,10 +95,9 @@
 
     <!-- about section starts -->
     <section class="container spacer10" id="about">
-        <div class="row jc-between ai-center ta-center-s">
+        <div class="row jc-between ai-center ta-center-s" id="about1">
             <div class="col5 col6-s">
-                <img src="img/sandy.png" alt="" class="img-responsive none-s">
-                <img src="img/sandy.png" alt="" class="img-responsive none-s">
+                <img src="img/sandy.png" alt="" class="img-responsive none-s" style="width: 400px;">
             </div>
             <div class="col6 col12-s">
                 <h1 class="size5 font2 lh18 size4-xs">
@@ -120,7 +116,7 @@
 
      services section starts -->
     <section class="container spacer10 bor-top bor-bottom" id="services">
-        <div class="row ai-center jc-between flexcol-md ta-center-md">
+        <div class="row ai-center jc-between flexcol-md ta-center-md" id="services1">
             <div class="col6 col12-md">
                 <h1 class="font2 size5 spacebottom1">
                     WHAT DO I HELP
@@ -194,67 +190,69 @@
             </div>
         </div>
     </section> 
+    <div class="contact-info">
+        <h2></h2>
+       <br> <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsa? Quasi sint accusantium quis vitae, corporis molestiae consequuntur repellat ratione voluptates,
+         perferendis tenetur veniam iste at voluptatibus magnam officiis cupiditate.
+        </P>
+       <br> <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos saepe impedit. Error ducimus vero dolore blanditiis! Nisi
+           corporis dolor quasi mollitia laudantium neque repudiandae animi! Excepturi magni natus a.
+        </p>
+        <div class="socials-icons">
+            <i class="fab fa-facebook"></i><p> Fitahiana Sandra</p>
+            <i class="fab fa-instagram"></i><P> Fitahiana sandra</P>
+            <i class="fab fa-twitter-square"></i><P> Fitahiana sandra</P>
+            <i class="fas fa-phone-alt"></i><p>032/033/034 2255511</p>
+        </div>         
+    </div>
+    <div class="contact-form">
+        <h2>contacter nous</h2>
+        <form action="#" method="post">
+            <label for="name">nom:</label>
+            <input type="text" id="name" name="name"placeholder="Your name here" required>
+            <label for="email">email:</label>
+            <input type="email" id="email " name="email" required>
+            <label for="message">message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="terms">
+                <input type="checkbox" id="terms " name="terms" required>
+                <label for="terms">j'accèpte les <a href="#">termes du services</a></label>
+            </div>
+            <button type="submit">soumettre</button>
+        </form>
+    </div>
+    <div class="map">
+        <img src="img/sary1.png" class="tsou">
+    </div>
+    
+    </div>
+        <!-- services section ends -->
+    
+        <!-- contact section starts -->
+        <section class="footer  spacer10 ta-center" id="contact">
+            <h1 class="size5 font2 spacebottom2">
+                Let's Talk with Me!
+            </h1>
+            <a href="#" class="hire size2 white"><span class="fas fa-envelope spaceright1"></span>email me</a>
+            <div class="row container jc-between ai-center spacetop10 flexcol-s jc-center-s">
+                <div class="share size2">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-dribbble"></a>
+                    <a href="#" class="fab fa-medium-m"></a>
+                </div>
+                <p class="size2 halfwhite spacetop1-s">Created by <span class="white bold">sandy</span> | All
+                    Reserved!</p>
+            </div>
+        </div>
+        </section>
+        <!-- contact section ends -->
+    
 </main>
 
-<div class="contact-info">
-    <h2></h2>
-   <br> <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsa? Quasi sint accusantium quis vitae, corporis molestiae consequuntur repellat ratione voluptates,
-     perferendis tenetur veniam iste at voluptatibus magnam officiis cupiditate.
-    </P>
-   <br> <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dignissimos saepe impedit. Error ducimus vero dolore blanditiis! Nisi
-       corporis dolor quasi mollitia laudantium neque repudiandae animi! Excepturi magni natus a.
-    </p>
-    <div class="socials-icons">
-        <i class="fab fa-facebook"></i><p> Fitahiana Sandra</p>
-        <i class="fab fa-instagram"></i><P> Fitahiana sandra</P>
-        <i class="fab fa-twitter-square"></i><P> Fitahiana sandra</P>
-        <i class="fas fa-phone-alt"></i><p>032/033/034 2255511</p>
-    </div>         
-</div>
-<div class="contact-form">
-    <h2>contacter nous</h2>
-    <form action="#" method="post">
-        <label for="name">nom:</label>
-        <input type="text" id="name" name="name"required>
-        <label for="email">email:</label>
-        <input type="email" id="email " name="email" required>
-        <label for="message">message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <div class="terms">
-            <input type="checkbox" id="terms " name="terms" required>
-            <label for="terms">j'accèpte les <a href="#">termes du services</a></label>
-        </div>
-        <button type="submit">soumettre</button>
-    </form>
-</div>
-<div class="map">
-    <img src="img/sary1.png" class="tsou">
-</div>
 
-</div>
-    <!-- services section ends -->
-
-    <!-- contact section starts -->
-    <section class="footer container spacer10 ta-center" id="contact">
-        <h1 class="size5 font2 spacebottom2">
-            Let's Talk with Me!
-        </h1>
-        <a href="#" class="hire size2 white"><span class="fas fa-envelope spaceright1"></span>email me</a>
-        <div class="row container jc-between ai-center spacetop10 flexcol-s jc-center-s">
-            <div class="share size2">
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-dribbble"></a>
-                <a href="#" class="fab fa-medium-m"></a>
-            </div>
-            <p class="size2 halfwhite spacetop1-s">Created by <span class="white bold">sandy</span> | All
-                Reserved!</p>
-        </div>
-    </div>
-    </section>
-    <!-- contact section ends -->
-
+</main>
     <!-- custom js file link -->
     <script src="js/script.js"></script>
 </body>
